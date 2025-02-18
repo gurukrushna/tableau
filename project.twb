@@ -1,0 +1,1352 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train' inline='true' name='federated.1kdem5c0e3bv6a1cm09km0dbiyfv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train' name='textscan.01k517t179730l18lj5m00qb0vm6'>
+            <connection class='textscan' directory='C:/Users/LENOVO/Desktop/titanic' filename='train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01k517t179730l18lj5m00qb0vm6' name='train.csv' table='[train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='PassengerId' ordinal='0' />
+            <column datatype='integer' name='Survived' ordinal='1' />
+            <column datatype='integer' name='Pclass' ordinal='2' />
+            <column datatype='string' name='Name' ordinal='3' />
+            <column datatype='string' name='Sex' ordinal='4' />
+            <column datatype='real' name='Age' ordinal='5' />
+            <column datatype='integer' name='SibSp' ordinal='6' />
+            <column datatype='integer' name='Parch' ordinal='7' />
+            <column datatype='string' name='Ticket' ordinal='8' />
+            <column datatype='real' name='Fare' ordinal='9' />
+            <column datatype='string' name='Cabin' ordinal='10' />
+            <column datatype='string' name='Embarked' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassengerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassengerId]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PassengerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Survived]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pclass]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Pclass</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SibSp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SibSp]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SibSp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Parch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Parch</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticket</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticket]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Ticket</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fare]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Fare</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cabin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cabin]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Cabin</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Embarked</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Embarked]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Embarked</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Passenger Id' datatype='integer' name='[PassengerId]' role='dimension' type='ordinal' />
+      <column caption='Sib Sp' datatype='integer' name='[SibSp]' role='measure' type='quantitative' />
+      <column caption='train.csv' datatype='table' name='[__tableau_internal_object_id__].[train.csv_C8BD2AE633DB47DCA44AECFF07469B9A]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/LENOVO/AppData/Local/Temp/TableauTemp/#TableauTemp_1n7kvi600xj1cv12phzu11tir6xg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/16/2025 08:47:10 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PassengerId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PassengerId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PassengerId</remote-alias>
+              <ordinal>0</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>891</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Survived</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Survived]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Survived</remote-alias>
+              <ordinal>1</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pclass</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pclass]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pclass</remote-alias>
+              <ordinal>2</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>891</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sex</remote-alias>
+              <ordinal>4</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>5</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SibSp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SibSp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SibSp</remote-alias>
+              <ordinal>6</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Parch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Parch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Parch</remote-alias>
+              <ordinal>7</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ticket</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ticket]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ticket</remote-alias>
+              <ordinal>8</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>681</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fare</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fare]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fare</remote-alias>
+              <ordinal>9</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>248</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cabin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cabin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cabin</remote-alias>
+              <ordinal>10</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Embarked</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Embarked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Embarked</remote-alias>
+              <ordinal>11</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='train.csv' id='train.csv_C8BD2AE633DB47DCA44AECFF07469B9A'>
+            <properties context=''>
+              <relation connection='textscan.01k517t179730l18lj5m00qb0vm6' name='train.csv' table='[train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='PassengerId' ordinal='0' />
+                  <column datatype='integer' name='Survived' ordinal='1' />
+                  <column datatype='integer' name='Pclass' ordinal='2' />
+                  <column datatype='string' name='Name' ordinal='3' />
+                  <column datatype='string' name='Sex' ordinal='4' />
+                  <column datatype='real' name='Age' ordinal='5' />
+                  <column datatype='integer' name='SibSp' ordinal='6' />
+                  <column datatype='integer' name='Parch' ordinal='7' />
+                  <column datatype='string' name='Ticket' ordinal='8' />
+                  <column datatype='real' name='Fare' ordinal='9' />
+                  <column datatype='string' name='Cabin' ordinal='10' />
+                  <column datatype='string' name='Embarked' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='daikibo-telemetry-data' inline='true' name='federated.0pdgjtk0e8imce1dme2x704p9gri' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='daikibo-telemetry-data' name='semistructpassivestore-direct.1at6as01im5e16183rat707bhqmj'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/LENOVO/Desktop' filename='daikibo-telemetry-data.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[daikibo-telemetry-data.json]'>
+                  <map key='data' value='true' />
+                  <map key='location' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1at6as01im5e16183rat707bhqmj' name='daikibo-telemetry-data.json' table='[daikibo-telemetry-data.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[daikibo-telemetry-data.json].[Document Index (generated)]' />
+          <map key='[area]' value='[daikibo-telemetry-data.json].[location.area]' />
+          <map key='[city]' value='[daikibo-telemetry-data.json].[location.city]' />
+          <map key='[country]' value='[daikibo-telemetry-data.json].[location.country]' />
+          <map key='[deviceID]' value='[daikibo-telemetry-data.json].[deviceID]' />
+          <map key='[deviceType]' value='[daikibo-telemetry-data.json].[deviceType]' />
+          <map key='[factory]' value='[daikibo-telemetry-data.json].[location.factory]' />
+          <map key='[section]' value='[daikibo-telemetry-data.json].[location.section]' />
+          <map key='[status]' value='[daikibo-telemetry-data.json].[data.status]' />
+          <map key='[temperature]' value='[daikibo-telemetry-data.json].[data.temperature]' />
+          <map key='[timestamp]' value='[daikibo-telemetry-data.json].[timestamp]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>data.status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>data.temperature</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deviceID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deviceID]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>deviceID</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deviceType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deviceType]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>deviceType</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.area</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.city</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.country</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.factory</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[factory]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.factory</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.section</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[section]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.section</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='unhealthy' datatype='integer' name='[Calculation_1150388277926014980]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [status] = &quot;unhealthy&quot; THEN 10 ELSE NULL END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='daikibo-telemetry-data.json' datatype='table' name='[__tableau_internal_object_id__].[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.area</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.city</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.country</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Device ID' datatype='string' name='[deviceID]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>deviceID</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Device Type' datatype='string' name='[deviceType]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>deviceType</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.factory</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Section' datatype='string' name='[section]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.section</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.status</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Temperature' datatype='real' name='[temperature]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.temperature</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Timestamp' datatype='real' name='[timestamp]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>timestamp</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <group caption='Action (Factory)' hidden='true' name='[Action (Factory)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[factory]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Country, City'>
+          <field>[country]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <folders-common>
+        <folder name='Daikibo-Telemetry-Data'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[deviceID]' type='field' />
+          <folder-item name='[deviceType]' type='field' />
+        </folder>
+        <folder name='Data'>
+          <folder-item name='[Calculation_1150388277926014980]' type='field' />
+          <folder-item name='[status]' type='field' />
+        </folder>
+        <folder name='Location'>
+          <folder-item name='[area]' type='field' />
+          <folder-item name='[city]' type='field' />
+          <folder-item name='[country]' type='field' />
+          <folder-item name='[factory]' type='field' />
+          <folder-item name='[section]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/LENOVO/AppData/Local/Temp/TableauTemp/#TableauTemp_10p5s2a15btnzm1733y9d1uh4808.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/17/2025 01:34:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Document Index (generated)]' value='[Extract].[Document Index (generated)]' />
+            <map key='[area]' value='[Extract].[location.area]' />
+            <map key='[city]' value='[Extract].[location.city]' />
+            <map key='[country]' value='[Extract].[location.country]' />
+            <map key='[deviceID]' value='[Extract].[deviceID]' />
+            <map key='[deviceType]' value='[Extract].[deviceType]' />
+            <map key='[factory]' value='[Extract].[location.factory]' />
+            <map key='[section]' value='[Extract].[location.section]' />
+            <map key='[status]' value='[Extract].[data.status]' />
+            <map key='[temperature]' value='[Extract].[data.temperature]' />
+            <map key='[timestamp]' value='[Extract].[timestamp]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160704</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data.status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data.status</remote-alias>
+              <ordinal>1</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data.temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temperature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data.temperature</remote-alias>
+              <ordinal>2</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deviceID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deviceID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deviceID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deviceType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deviceType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deviceType</remote-alias>
+              <ordinal>4</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.area</remote-alias>
+              <ordinal>5</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.factory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[factory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.factory</remote-alias>
+              <ordinal>8</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.section</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[section]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.section</remote-alias>
+              <ordinal>9</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>10</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7386</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10' show-hidden-fields='true' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Document Index (generated)' />
+        <field-sort-custom-order field='status' />
+        <field-sort-custom-order field='Calculation_1150388277926014980' />
+        <field-sort-custom-order field='Calculation_1150388277925658627' />
+        <field-sort-custom-order field='temperature' />
+        <field-sort-custom-order field='deviceID' />
+        <field-sort-custom-order field='deviceType' />
+        <field-sort-custom-order field='area' />
+        <field-sort-custom-order field='city' />
+        <field-sort-custom-order field='country' />
+        <field-sort-custom-order field='factory' />
+        <field-sort-custom-order field='section' />
+        <field-sort-custom-order field='timestamp' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='daikibo-telemetry-data.json' id='daikibo-telemetry-data.json_9A897F675FB6431DA64931858F047B62'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1at6as01im5e16183rat707bhqmj' name='daikibo-telemetry-data.json' table='[daikibo-telemetry-data.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_FAE55622178A4578BEF9AEE1C34A5C67]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='project' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='project' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Down Time Per Device Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daikibo-telemetry-data' name='federated.0pdgjtk0e8imce1dme2x704p9gri' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pdgjtk0e8imce1dme2x704p9gri'>
+            <column caption='unhealthy' datatype='integer' name='[Calculation_1150388277926014980]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [status] = &quot;unhealthy&quot; THEN 10 ELSE NULL END' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[deviceType]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>deviceType</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>location.factory</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[deviceType]' derivation='None' name='[none:deviceType:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.status</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_1150388277926014980]' derivation='Sum' name='[sum:Calculation_1150388277926014980:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pdgjtk0e8imce1dme2x704p9gri].[Action (Factory)]'>
+            <groupfilter function='level-members' level='[factory]' user:ui-action-filter='[Action1_FAE55622178A4578BEF9AEE1C34A5C67]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0pdgjtk0e8imce1dme2x704p9gri].[Action (Factory)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]</rows>
+        <cols>[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]</cols>
+      </table>
+      <simple-id uuid='{AD55DD19-C59B-43B5-B176-5CB5451A5FD5}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Down Time per Factory</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daikibo-telemetry-data' name='federated.0pdgjtk0e8imce1dme2x704p9gri' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pdgjtk0e8imce1dme2x704p9gri'>
+            <column caption='unhealthy' datatype='integer' name='[Calculation_1150388277926014980]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [status] = &quot;unhealthy&quot; THEN 10 ELSE NULL END' />
+            </column>
+            <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>location.factory</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[factory]' derivation='None' name='[none:factory:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.status</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_1150388277926014980]' derivation='Sum' name='[sum:Calculation_1150388277926014980:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pdgjtk0e8imce1dme2x704p9gri].[sum:Calculation_1150388277926014980:qk]</rows>
+        <cols>[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]</cols>
+      </table>
+      <simple-id uuid='{BF1163BC-436B-4AF8-AB9B-FF4A082CB3B0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='project'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98028' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='986'>
+            <zone h='98028' id='5' type-v2='layout-basic' w='91007' x='483' y='986' />
+            <zone fixed-size='133' h='98028' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8027' x='91490' y='986' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='93218' id='9' name='Sheet 2' w='37236' x='2655' y='4316' />
+        <zone h='91739' id='11' name='Sheet 1' w='43693' x='44297' y='4069' />
+        <zone fixed-size='358' h='27374' id='12' is-fixed='true' name='Sheet 1' pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]' type-v2='color' w='17984' x='74291' y='14180' />
+        <zone h='13070' id='10' name='Sheet 2' pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]' type-v2='color' w='11044' x='26132' y='14427' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='13' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+                <zone fixed-size='280' h='91739' id='11' is-fixed='true' name='Sheet 1' w='43693' x='44297' y='4069'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='358' h='27374' id='12' name='Sheet 1' pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]' type-v2='color' w='17984' x='74291' y='14180'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93218' id='9' is-fixed='true' name='Sheet 2' w='37236' x='2655' y='4316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13070' id='10' name='Sheet 2' pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]' type-v2='color' w='11044' x='26132' y='14427'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{066D9581-6AF4-456B-A98D-D2E00B741BD0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E4242B8-E78E-4E1D-8394-752BFB093BF3}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A3FCC2EB-1221-480D-9A96-0DE0AC5C9992}' />
+    </window>
+    <window class='dashboard' maximized='true' name='project'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:deviceType:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0pdgjtk0e8imce1dme2x704p9gri].[none:factory:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{F70548FA-8D76-42C9-8B1E-50170A2182EE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='project' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAZgElEQVR4nO3d6W8bd57n8XdVkcWbFG/dp63L9xEn3UFnJn1PkunBIA97HzYG+2iBnZm/
+      YR8usMBiH+2TBnpntoPpHuwOOoPuxMnGdmz5vi0fsq2DkkiKEu+bVbUPpPho27Ejk5Tk+r0A
+      QVIVpd+Xx0dVv+Lvp59kGIaBIJiUvNUFCMJWEgEQTE0EQDA1EQDB1EQABFMTARBMTQRAMDUR
+      AMHURAAEUxMBEEzNstUFCEKrVCtldANsNjuyLD33Nt8pAA+mLxPP6ciGxv5Dh3HaNpefmds3
+      eDi7gMsfZGBwhOTiPAcPH+L5Jb6e6cvnyekyqmJn/8E9KC+43epKEl8wgkUcE98Y/+s3v+bY
+      O+8y+3COH/38AxzWZ5/c7/QKXpp/wK53PyYgZ/n3z7/gFx/8hMW5++TrMmO7BknEV+jqDHNv
+      5gG7du8iGY+jWmTK1Sqr2TJ7JnYjSxK7xveSXJhjaGI/XV47FqmBpNdYiMVZW0vTN9jHwuwC
+      o5N7UeUG07emifaNEPZ7AFheWiSzliLQPUTE7yEVXyCRqTAxtpvVlSR2K2SqCv1dIRYezPP9
+      jz/GDRi6xsy9O1QMK5Oju9AbFaan7xDu6uWz//MvDB54m70Tkyj1PA8WEoxNTKAVs2hWlfjS
+      Mm63j57uKCuJOP5wFMsL/qoI24MvEGbv3n0Mdzr4+tw0fb4q6VKDWkNissfJsh7ZXB9Adfqg
+      Xmbp3hUWCwphR4PTF6c5f26KcjbBp5/+iWy5woXL17hz9RzpqgVbMc6d5dxzf9+FCxehkeer
+      01cZGwry6WdnGR8K8NXpq3z1xRcM7J7g7MkvaejrA1dPnfiKwdEJpr78nHw6xuWZFL0BKyfO
+      XmXqxHGOnziL3a4CYBg6xUKBYqmErjfwBaI4GiucuzHHF58fZ3B0AofdxsDAIAcPHcFrrfPV
+      1DUmxob44viXLN27wT/97v+C1cm50yeo6zpTZ88hS+LFv1PYPB7K2Swzc3HeOXYMT2OViqeX
+      +Ts3NhcAw9CRFYVEPM7AQD/Brl7yqSQ9fgdTV+7ys5/9BRdPnyLQPYKkWOmMhrHbrDQ0/Vt/
+      byAUwm63E/D7sdnt6I06iXicu7du4PH4aWzczuntwKGqhFw2YosLpDJZ7i+sEvZ7kFUXv/ib
+      XxDxe9dr1RssxWIsLidJLT7gyq275EplysUidSx4HDZ8Xs+jGirFNO5gJza7G9mooyPxlz/9
+      kLGhXg6O9XHmzGk8nbsQf/x3BsPQuTx1hX1v7Qddo6Hp5MoNvG4vRjX93QKgyDI3rl7kzNcn
+      Gd13hLF9B7ky9RVfnzrD6N69jE2OcfnWLKOju5m+cpmx3QMoFisSICkWlCdeNYrF+uhFZLVa
+      ABmrxQLSxueN7yfHd1Ou1nG4PVg2bl/IpLh44TxF1cfY6D5cegED8Hjc2BwOlCdenKrdxej4
+      OKMjg0hArVajVK5isVjpi/iYOnuOmblF+ns7OT81RcMWwsgtcu7sFB2RXiyKFZt1vecwuOcI
+      F06e4tD+0U0/IUL79HWGuXTpMpHRwwyG3fzlD97h8uVL9E0ewatK7BnfjbQTJ8T84dNP+fCD
+      D9rebimf5tS5a/z0R3/R9raF1tiRAcjlcni93ra3uxJfxhuMPDoiCDvfjgyAIDSLuOotmJoI
+      gGBqIgBtUM/F+ffPTxBfzT61Xa/myWTyW1SVAGIsUFto5QyxZI6jWoXP/3gKpy9CJr3GQMDC
+      XEbFJhUwVA/13DIerw97YIBGpcQ7xw5tdelvPHEEaJPh0UlstRSpkszywl0Mq5fe/j4iHXbK
+      dSjls2iKg3ff+yF3z31GZGDXVpdsCuIqUBvojSrluoTTprCcSOHzuakU8zg8ASrlEhY0DKsD
+      BR2HTeFPx0/z85//qCWDA4WntTUAuq4jSRKSGEcjbAMry7Hm9gHq1RIPHs7T2TtAYS2BOxBF
+      K2epSTaiwQ50/dvHAgmCLMvIcnvOzJfjy80NQH4tQbEuoVdzaBYXiaV5wIpCDj3kR5ZlcQQQ
+      tgmDsckDze0Ee4I97N3dxezDRSRZRpLY+BAveGH7yawmmtsHqJbyzC/G6ekbYDUewxPspFHK
+      UJdsdEWCog/QBNn0KnVDJhTwb3UpbwTRCd5hfv8vn/D9935ELZ+ijJ2Q20IiU+Li2a/5yc8/
+      Ir44T9/AAInlJXTFyWCnj4bFQ4fbttWlb0vifYAdplYpsZbNsLQcZ2pqirMXrrJ7ZIhAKMLq
+      3C08kSgn/vRHbtyPo2Vi/OnkeRSreL/zRbb8kWmkUqC39iAk2VQUn6+lbbTLxL7DTO4eYiqx
+      yMBAP91+B3cfLtATCeAORZibmWHy0GF0i4vRHhc3/+00HpsYvv0iW34KFPvV36EXCi1t13H0
+      KOF//PuWtrEdrcZj4AwQ9Dq3upRta8uPAMJ3c/ziQ64/SADgdqj86qPDANSqFRSLiqLI1OtV
+      6g0dT3D9P1eUSkUUxYLN9nQ/oFKpYLPZnumTlcoldN3A5XS+8f01EYAd5u5Cii8vzwIQ9Dr4
+      1UeHSS7HOHHyBAePfo/USpL+/i7SmQKlhkFnh4tyMcPlq3d4+/vvUs6nkVUnY7tG+HrqBHa7
+      j317xrh58zbDQ0PE4nESmSWGunfjtlmZX4hx+K1jOFTr1t7xFhGd4DfAtbvTjO8eIZmMk0ws
+      c+r8eVYLBT777I/YLBKLS8sMDI1w7eYlZhOrzM3d4dq1q2iyhZ6Qm//563+iUilx6dIFGood
+      iywz82CW6bszDHX6uDcX3+q72DLiCLDD+Nx2uoJuAPweBwBRf5DYcoLOrk7sDifRQAB/MMjf
+      /uKvia+k6e7uYyG2RH/vLoqZFWQ1zL59+1FuXWdmbpm//einzM7GGBgYItzbS9LWoFGTsSoy
+      voAPvaZu5V1uKdEJFkxNHAF2mMbiRfTVBwBIVgfWiY+2uKKdTQRgh2nc/gP1a58AILmjWCc+
+      olopce7MKUYmD9GoVvB67SSSaTSLje4OF+lMktm5JG8dO0atUkKyqPh9Xs6eOk66amHf2DAd
+      wTCVYo5avcqN2w/53rEjZLI5Qn4f+WIJp8OOYYDb7aZQyJNOZ1EUiVA4SjKxTDAYYCmxSl9P
+      N7ValWI+i9sXwOWwb/Ej9mJavdL8AKTiSzg6gizPzeIOhFG0MnXJRnc01OymhA0nT59AlSQW
+      F+a4eeMavmiQYKiLixcu8PFf/ZjZ2TkqdYXP/99nIFlQJI3B3gHWsln2HXyLM6fPoFHF5Qlz
+      aN8Y6VyBUyeOE/Z7Ofn1EsO795BOxZFlmd5olDv357ApGq5ggBMnv6KmG3RGw9Q1mdm5+xTz
+      qzjcYerVAh/87MOtfniezzBYmG/6fIAisViMKBZWcwV8kTDZTA2ZMo1IEMkw2IoJaAYGmqa1
+      vd1W+PPHT9M0rBYLK8lVfIZEh9+PLFuxqzb2Te4hnkjhcDhJZ1J4Q2FK2TSyamNici+1Um59
+      Npqi4rCr6PUq1Tro1QL2jiDLKxmikSh790zy8HqJRBnGxveQzpfxORSckRC1QoWaBv29vWSK
+      Ovevn+EHP/6AS+fP4/MHvvPj/s2Q+VYzMND0RnM7wfGFhywsLeEI9LKrr5OZmbuoVicyGoOj
+      u5E2OsFPWvq7/9iGTvARgn//n1vaRtvUS6BV17+WZLC1Z4jH1SsX2T15AKf64r+Zmlbn0tXr
+      vHX48KbbafdgyaYeATr7hghGOmkYMonlGL0DIxjVPDXJhkWS0DfuXPvfXZTaNsuo1RqlOnqh
+      BICkKFi72zMs+tDht156G1m28fbRo22opnma3gew2hxYgYGhkfUNHjEOpZlyv/s9hc+PA6AE
+      AvT8j/8OQGxuBnegmw6Pk3K5wOpqFt2i0hP0srqWJF/UGBkefOp3LTy8S7qks3/P+KNthtFg
+      bjHJYG/3K9eUWkmSSiUYn9j3+newzcRVoDfAyZNfsBRbYmLvAf7316fYvWcUu9PH/ZkZju2f
+      JLWSYHYhye37d6iViihWlf2Tk1w8f5bh8QP89p9/g6ujg1q1xlB/N2cuTjM20k2lVEJWrWBx
+      YZM1JElmZHCIa7duYHP4qOZWmF1MMjQ8jNdmMLewjKoqlMtlxvcfZbinc6sfmpd6M84LTK5c
+      LeOwqzycu0+H308iuYq20d8ql8vUGw08Hg8NTUMzQNc1/IEQ0UiEaIeLqq6Qza4gyQqRrl68
+      Hie1ag2nTaVUqvDee+/htqs0JAuBQIhdg4PM3L1NuVbn4P4DNBp1JEkBGuRLZZxOO5VKdasf
+      llci3gneYWqzszSSKwBIqorj4AHq9RqVag27TaVSqWGzqRtzsiW0RgNZlqlUytgdTrRGHSQF
+      u02lUa+jWBQKhSKqzYauNVAUK/V6FVW1Ua3WsNtVFMXCxbOn6B87QMTvpVarUm9oqFYL1Wod
+      VbUiSxKSLKFpOtVaDbfLtSNGkopToB1GHRxEHRx8apvVqmK1qo++fpJFUTa2r4/mXF99Z2Pf
+      xjaP55slotZ/Vt0Y+fnNzwAcfecHj2tQbajq47afpCigqjtn7JAIwA7zb9M3ubA4D4DXZucf
+      fvA+AGsrceweP067jXK5QC5fRlFt+F020pk0mqEQjYSf+zuXFufp7ul/YZupRBxXKIxDefNm
+      lokA7DB1XaPSWF8u0Kasf7529SLTt6bZf/gYS7F5Ql0hNE0mubrKSG8XpVya69MPGBkdpZLP
+      Iqt23nv3Xa5cOktDspGM3ePy1evs2jXMwvwCvkAHmXSGcFcf8Yf3aACSw0F3OMpaKkUwHGXm
+      zm26+wb4/rGdddnzz4kAbDgfm6dcr7e0DZ/dwYGuV7+8+KriayvsGu5ndu4+uXSGRGaN3v5B
+      bt28xUR/N7FMhtHRcZZWYlhVF0o5y/Xr11BUO/fuPaQz6CfQ4eHc1Uv0hrtZW0nw9nvvcenS
+      dWSHh36fk669B/nDP/8axRkmEAoR7u6jVCw2/b60mwjAhi8f3GO1VGppG8OB4GsHYHcwjLpx
+      KuKwrJ+jH95zkIXFZY4eGmMhtkS0M4rd4eTA+AT5bIb9+48wN7/Au++8RzGTQlKdDPT2EF+K
+      YVGddIb8WK0W+ofGuXv3Pv179+BSnQz1dq8PsYhE8VotfPjXHxOPLRCOdtPfa0F/A4aXiADs
+      MPs6u9jX2fXUtlCkk1Bk/Zp7OBx9ap9vo4MbDEXW9z/xD7U6u3v58yv1R48eefT10MAwQwPD
+      j74PB4OEg8HXvg/biXgfQDA1EQDBtLRaqfkBKOZz1Boaq8k4lVqDYi5NJr/zO0vCG8YwmJtf
+      am4fQNdq3L55jXDPEHXNYCV9H3SQMPBMjIsVT4Rtw8BAkvTmBmB5fpaabpBMrdLTN0hJKwIO
+      LNTRDQNpixbIMAyDxsa18xffZnvUYXbtWiBDkmSGRkabG4CeoVGCkU7qkkoyNos72IVWXKMm
+      ObFIEsYWLZAhSRIWy7ff1XaU9Cp1CO3V9GfD7vJiBzyjG2PMg49nLInV+ITtRlwFEkxNBEAw
+      NREAwdREAARTEwEQTE0EQDA1EQDB1EQABFMTARBMTQRAMDUxMEUwKYOlhTlxBBDMSsLjcTf3
+      CFApZJmNLeL2dLCSSNLV109hLU5dsjE+OtLMpgThNRmg2JobAJvThVGr0NAlbHYr+fwaisWL
+      mxp1w0AW8wHEfICXaNd8AIBGtdzcABTzOSTVTqVcxCIr1GoGUi1FXrLRK+YDiPkA24qEPxRp
+      bgDcvgDjvsAL94v5AMJ2IzrBgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYmgiAYGoiAIKp
+      iQAIpiYGpggmZZBKLIsjgGBeDpe7uQGoV0rcuzdDqVJjcWGWXLHC2kqcRCrdzGYEoSkMvcnr
+      A0iKgs+jMnt/Brc/THxxFrCikCMY7EAyDAzDaPtwaDDQXzIXoR3zATB4aR1m187h8vlsttmn
+      QBKaZqBrdeRHY//lZ+6QsREEoy2vuvVh2E+2+byP9tTx7TWIj9Y8D5988slztkp09Q009whQ
+      r5bJF6v0j4ySWVkiFO1DK6WpSR4skoS+ke62T4hBQtlYW/eFt2nThJiX1SE0XyaT4be//S0f
+      ffQRLpfrqX2bOgKUSiUuXLjwzHaH28fo6Chel4P+wRH8Xiehzh66o6HNVS4ITbBr1y7C4TBn
+      z559Zt+mjgC1Wo3r168DcPTo0derThBa7Ic//OEL923qCCDLMqqqcu/ePb766qtNFyYI7XLz
+      yjm+PnOO1Wzhqe2bOgJ4vV5++ctfNqUwQWgLXSeXzXB56mveev9n+NT1zZu+CpRfXeLsxasU
+      ytVmlSgILVNvNNA1jbGDxx69+OE1AmB3ecnFH/Kvv/9Xrt9+0IwaBaElVhMxZubjRCIR7Dbr
+      U/s2HYBqKY/k6ODQkaOMDfe+dpGC0Couj4+BgT66u8Kk19ae2repABiGTiq+gMMbwuN2oarq
+      y39IELaIpNW4e/ce03fuEwiGn9q3uQDoGvOLccqFDA9m55pSpCC0ykoygcPhJJfNUiiVntq3
+      ucugihW9mmctm0dWxIhqYXvrHZlkqCdMrZylXNOe2repV6/eqCE7gnRoCjZx+iPsAHZvgA6P
+      C732+KrlanKT8wEkxcrevXtIr6VIZ3NNK1IQWsVlhcGJw4T93kfb7E7XJgMgSTRKWewdESzS
+      4+G9hqGzmkrR0DRWV1bI5otUSgWK5crr3wNBeA2p1TWmTh4nU/zmCGAwc+f25keDdkR6iSTL
+      RCPRR9uqpQKFfJpMrsDC3Cwj4xMU02sYSIxOjEEbhx4/ycBA07Rvv02b1gd4WR1m980w+mar
+      VkoEQl047I/fB9g1NrH5AOTXlpmeeUAmm2N4qB8AXatTl+wM9kXp7enm3r07qKoTBQ0D+OZu
+      tX84dPvbfH4d7R8KLsDS7B1m5pMEAk/+634Jl9uz+QDYnF6oFEDtf7RN0wwa1RLZfJlCOkXP
+      wDBGJU9dsm3pfACQXrrqSFtKkmjb6ifCY92DYxxIpVhIZJ7Zt7mrQFqdC+emCHUPEQ36H233
+      +EOM+9fH/gf9vo2Nruf9CkFoq9W1NF6vD9Xy9ISkzXWCZYX9h9/GopcoFEsv/wFB2GLBQIBs
+      NkO13oT3ASRJRqtk8XcN0xN98ZJIgrBddPb0Y3c5WVtL09/5+Kxl86NB3X5Si/eZXVhqSoGC
+      0EqlQo5Mvs7IUN9T2zfdCbaodqLRKKnMsx0LQdhuBndPMvic7Zs+Ami1KisrK3h8/pffWBC2
+      qU0fAdzBLj788MNm1iIIbScuSgumJgIgmJoIgGBqIgCCaSWXYyIAgnn5QxERAMGsDGJzD5v7
+      36HLhSxzCzFkxU6plMfh6UArZqhLNvbvm2hmU4Lw2iwWa3MDYHM4USQZt0vFF9xFMRPD6grh
+      oUbdMJC3aHEIwzBoNBovuc32qMPsZFlu05Bxib7B4eYGYHV5gWID/HYniaWHuDpCNEppCpKN
+      XknCeLRoRpsnxEgSFsu339V2rQ/wsjqE9mrqsxHuHSa88U/iQsHgxtauR/vbPxlSEL6d6AQL
+      piYCIJiaCIBgaiIAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYViYVFwEQzMvmcIoACGZl
+      YLVamxuAWrnA+cvXMLQqly9fIb6yxv07t5i+e18MhBO2ndTKSnNHg6oONz63HUM3sNms5Atp
+      FIsXt5gP8Mp1mF075wN09vQ3e0ZYhsXYIh6vD4usUKvqSLUUeTEf4JXrENqrqc+Gw93B+++/
+      D0BXNPrMfnEaJGw3ohMsmJoIgGBqIgCCqYkACKYmAiCYmgiAYGoiAIKpiQAIpiYCIJiaCIBg
+      WrVKsblDIYTX15g/i1HNtbQNyebB0v9OS9vYCfK5rAjAdlM9+V/Rkzdb2oYcHsPyH37X0jZ2
+      An8g2NxTIMPQSSZXwDBYWpgjV6yQTiVIrIrFtIXtxiC+tNTcI0CjWmZ+aQmvQ6ahOIkvzoJh
+      RSZLMOBD2hh0b7Rj8P1TDPSXzEVoS0kGL62jLWNmX6mOrdG+4fIS3f1DzQ2A1e7C63JgGAay
+      rGzcGRn5iSe1/S/+9ZfUVrT7bB3GtqgDtsfj8TztnivS9Akx1WqVQt2CXl4lFO2lUVpfIski
+      Segb6W77hBgkFEX59tu0aULMy+qAdhTCK9RhDk2fELNvb8f6N8GNz15XM5sQhKYS7wMIpiYC
+      IJiaCIBgaiIAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYmgiAYGotmhBjkF5dRbE5URUD
+      DQsuh601TQnCa2jJEUCvFZi++xBN13j4YI65Bw/YnqPPBbNryRFAsjjZMzHCwsIsTrsPhQYN
+      sUDGq9XRhgkx23mhjvYtkLGuJQHQtDqJeBKfPwq1HDXsWMUCGa9WB1LLIyAW6nisJY+CxWpn
+      dHx847vIo+3bcw6SYGbiKpBgaiIAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYm3g0Rnuu//OYk
+      Nx4kW9pGuMPJf/tPf9XSNl5GBEB4rkq1QbFSb2kbzhb//lfR8lOgxNICseXW/iURhM1qcQAa
+      5Esa9WKO7Tn0SjC7lp8CaVoD0NrxL18F4TtrcQAsdIa81CQbCog5AcK20/IjgC+4PhrUMB4v
+      UvHkcGjnT36MUa22tAZrXy+apn3rbY509VKq11paR8Dpemkd8tgHSD1HWlqH5Aq/tI7v7elh
+      IOptaR1uh/pMHZIktXU+gGS0caUEXde3ZD7AnzMMY2MRj619G2S71LFdnpdvamnn4/H/AW9u
+      nxXX45ePAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
